@@ -1,0 +1,1 @@
+declare module "gerador-guia-spsadt"
