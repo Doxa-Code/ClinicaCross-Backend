@@ -7,8 +7,7 @@ const MedicamentoSchema = new mongoose.Schema<MedicamentoDocument>(
   {
     codigo: {
       type: String,
-      trim: true,
-      index: { unique: true, sparse: true },
+      trim: true
     },
     nome: {
       type: String,

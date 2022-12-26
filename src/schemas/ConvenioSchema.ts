@@ -7,12 +7,10 @@ const ConvenioSchema = new mongoose.Schema<ConvenioDocument>(
   {
     codigo: {
       type: String,
-      trim: true,
-      index: { unique: true, sparse: true },
+      trim: true
     },
     numero: {
-      type: Number,
-      index: { unique: true, sparse: true },
+      type: Number
     },
     nome: {
       type: String,

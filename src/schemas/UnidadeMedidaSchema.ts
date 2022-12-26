@@ -8,13 +8,11 @@ const UnidadeMedidaSchema = new mongoose.Schema<UnidadeMedidaDocument>(
     codigo: {
       type: String,
       trim: true,
-      unique: true,
       required: true
     },
     descricao: {
       type: String,
       trim: true,
-      unique: true,
       required: true
     }
   },
