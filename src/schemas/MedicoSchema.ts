@@ -34,8 +34,7 @@ const MedicoSchema = new mongoose.Schema<MedicoDocument>(
     },
     codigo: {
       type: String,
-      trim: true,
-      index: { unique: true, sparse: true },
+      trim: true
     },
     UF: {
       type: String,

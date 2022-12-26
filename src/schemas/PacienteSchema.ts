@@ -161,8 +161,7 @@ const PacienteSchema = new mongoose.Schema<PacienteDocument>(
     },
     codigo: {
       type: String,
-      trim: true,
-      index: { unique: true, sparse: true },
+      trim: true
     },
     nome: {
       type: String,
@@ -171,13 +170,11 @@ const PacienteSchema = new mongoose.Schema<PacienteDocument>(
     },
     cpf: {
       type: String,
-      trim: true,
-      index: { unique: true, sparse: true },
+      trim: true
     },
     rg: {
       type: String,
-      trim: true,
-      index: { unique: true, sparse: true },
+      trim: true
     },
     dataNascimento: {
       type: String,
