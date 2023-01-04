@@ -18,7 +18,7 @@ const ModeloSchema = new mongoose.Schema<ModeloDocument>(
     tipo: {
       type: String,
       required: true,
-      enum: ["Receita", "Atestado", "Declaracao"],
+      enum: ["Receita", "Atestado", "Declaracao", "Prontuario"],
     },
   },
   {

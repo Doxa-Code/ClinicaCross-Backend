@@ -1,4 +1,4 @@
-export type Tipo = "Receita" | "Atestado" | "Declaracao";
+export type Tipo = "Receita" | "Atestado" | "Declaracao" | "Prontuario";
 export class Modelo {
   public nome!: string;
   public corpo!: string;
