@@ -112,6 +112,8 @@ export class Paciente {
   public declaracao!: Declaracao[];
   public prontuario!: Prontuario[];
   public anexo!: Anexo[];
+  public responsavel!: string;
+  public email!: string;
 
   constructor(props: Paciente) {
     Object.assign(this, props);
