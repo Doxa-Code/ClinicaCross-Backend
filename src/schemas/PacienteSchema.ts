@@ -273,6 +273,12 @@ const PacienteSchema = new mongoose.Schema<PacienteDocument>(
         select: false,
       },
     ],
+    responsavel: {
+      type: String,
+    },
+    email: {
+      type: String,
+    }
   },
   {
     versionKey: false,
