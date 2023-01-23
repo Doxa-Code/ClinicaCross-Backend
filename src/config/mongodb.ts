@@ -14,7 +14,6 @@ const infoRequired = [
   "MONGODB_USER",
   "MONGODB_PWD",
   "MONGODB_DB",
-  "MONGODB_PORT",
 ];
 
 infoRequired.map((info) =>
@@ -34,13 +33,12 @@ function generationThrow(generate: boolean, msg: string) {
   }
 }
 
-const { MONGODB_URI, MONGODB_USER, MONGODB_PWD, MONGODB_DB, MONGODB_PORT } =
-  dbInfo;
+const { MONGODB_URI, MONGODB_USER, MONGODB_PWD, MONGODB_DB } = dbInfo;
 
 mongoose.connect(
-  `mongodb://${encodeURIComponent(MONGODB_USER)}:${encodeURIComponent(
+  `mongodb+srv://${encodeURIComponent(MONGODB_USER)}:${encodeURIComponent(
     MONGODB_PWD
-  )}@${MONGODB_URI}:${MONGODB_PORT}/${MONGODB_DB}?authSource=admin`,
+  )}@${MONGODB_URI}/${MONGODB_DB}?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

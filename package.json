@@ -7,7 +7,8 @@
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/index.ts",
     "test": "export NODE_ENV=test && jest --watch --detectOpenHandles",
     "migrate:test": "export NODE_ENV=test && node database",
-    "migrate:dev": "export NODE_ENV=dev && node database"
+    "migrate:dev": "export NODE_ENV=dev && node database",
+    "build":  "tsc"
   },
   "dependencies": {
     "@doxa-code/observability": "^0.1.8",
