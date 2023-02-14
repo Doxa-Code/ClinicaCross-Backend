@@ -13,6 +13,7 @@ export class Prontuario {
   public readonly _id!: string;
   public responsavel!: any;
   public data!: string;
+  public titulo!: string;
 
   constructor(props: Prontuario) {
     Object.assign(this, props);

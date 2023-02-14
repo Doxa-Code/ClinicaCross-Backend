@@ -62,6 +62,7 @@ const ProntuarioSchema = new mongoose.Schema<ProntuarioDocument>(
       trim: true,
     },
     data: String,
+    titulo: String,
   },
   {
     timestamps: true,
