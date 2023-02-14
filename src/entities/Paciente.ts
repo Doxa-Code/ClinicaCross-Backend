@@ -14,6 +14,7 @@ export class Prontuario {
   public responsavel!: any;
   public data!: string;
   public titulo!: string;
+  public dataCriacao!: string;
 
   constructor(props: Prontuario) {
     Object.assign(this, props);
