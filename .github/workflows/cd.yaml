@@ -5,8 +5,8 @@ on:
     tags:
       - "v*.*.*"
 env:
-  APP: vitavi-backend
-  IMAGE: fernandoa12/vitavi-backend:${{ github.sha }}
+  APP: clinicacross-backend
+  IMAGE: fernandoa12/clinicacross-backend:${{ github.sha }}
 jobs:
   build:
     runs-on: ubuntu-latest
