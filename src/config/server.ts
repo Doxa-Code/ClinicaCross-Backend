@@ -10,6 +10,7 @@ import { createServer } from "http";
 import { Kafka } from "kafkajs";
 import { observabilityMiddleware } from "@doxa-code/observability";
 import { format } from "date-fns";
+import { createMetrics } from "DA-metrics";
 
 const app = express();
 
@@ -73,8 +74,9 @@ app.use(
     exposedHeaders: "*",
   })
 );
-
-app.use(Routes);
+createMetrics(app, () => {
+  app.use(Routes);
+});
 
 app.use((req, res) => {
   res.status(400).end();

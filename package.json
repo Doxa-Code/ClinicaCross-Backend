@@ -8,10 +8,11 @@
     "test": "export NODE_ENV=test && jest --watch --detectOpenHandles",
     "migrate:test": "export NODE_ENV=test && node database",
     "migrate:dev": "export NODE_ENV=dev && node database",
-    "build":  "tsc"
+    "build": "tsc"
   },
   "dependencies": {
     "@doxa-code/observability": "^0.1.8",
+    "DA-metrics": "gist:9232261fcb10461b74cb316524c6e8da",
     "aws-sdk": "^2.1034.0",
     "axios": "^0.26.0",
     "bcrypt": "^5.0.1",
@@ -28,7 +29,7 @@
     "multer-s3": "^2.10.0",
     "node-cache": "^5.1.2",
     "pdfkit": "^0.13.0",
-    "prom-client": "^14.0.1",
+    "prom-client": "^14.2.0",
     "socket.io": "^4.4.1",
     "ssh2-sftp-client": "^7.0.0",
     "uuid4": "^2.0.2"
