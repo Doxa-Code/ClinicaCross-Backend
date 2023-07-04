@@ -22,14 +22,14 @@ export class UsersRepository implements IUserRepository {
     return await UserModel.find()
   }
   async getOne<T>(data: T) {
-    const response = await UserModel.findOne(data)
+    const response = await UserModel.findOne(data as any)
     if(!response) {
       throw new Error('Houve um erro ao autenticar! tente novamente mais tarde!')
     }
     return response
   }
   async getOneWithTransitions<T>(data: T) {
-    const response = await UserModel.findOne(data).select('+transicoes')
+    const response = await UserModel.findOne(data as any).select('+transicoes')
     if(!response) {
       throw new Error('Houve um erro ao autenticar! tente novamente mais tarde!')
     }
