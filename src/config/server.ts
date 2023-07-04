@@ -74,7 +74,7 @@ app.use(
     exposedHeaders: "*",
   })
 );
-createMetrics(app, () => {
+createMetrics("clinicacross-backend", app, () => {
   app.use(Routes);
 });
 
